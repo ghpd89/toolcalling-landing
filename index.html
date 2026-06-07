@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title id="page-title">Premium Domain For Sale</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #111118;
+      --border: #1e1e2e;
+      --accent: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.15);
+      --accent-hover: #818cf8;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --secondary-btn: #1e1e2e;
+      --secondary-btn-hover: #252536;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle background gradient */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 30% at 80% 80%, rgba(99, 102, 241, 0.04) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3rem 3.5rem;
+      max-width: 540px;
+      width: 100%;
+      text-align: center;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.03) inset,
+        0 32px 80px rgba(0,0,0,0.5),
+        0 0 60px var(--accent-glow);
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-glow);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: var(--accent-hover);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1.75rem;
+    }
+
+    .domain {
+      font-size: clamp(1.8rem, 6vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #e2e8f0 30%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+      word-break: break-all;
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2.25rem;
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0 0 2.25rem;
+    }
+
+    .contact-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.75rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      border: 1px solid transparent;
+      width: 100%;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 0 24px rgba(99, 102, 241, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+      box-shadow: 0 0 32px rgba(99, 102, 241, 0.45);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: var(--secondary-btn);
+      color: var(--text);
+      border-color: var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--secondary-btn-hover);
+      border-color: #2e2e42;
+      transform: translateY(-1px);
+    }
+
+    .btn svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .footer {
+      position: relative;
+      z-index: 1;
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      opacity: 0.6;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="badge">Premium Domain For Sale</div>
+
+    <div class="domain" id="domain-display">Loading…</div>
+
+    <p class="tagline">
+      This premium domain is available for acquisition. Own a strong, memorable brand identity today.
+    </p>
+
+    <hr class="divider" />
+
+    <p class="contact-label">Interested? Get in touch</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" id="email-btn" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        Contact via e-mail
+      </a>
+
+      <a class="btn btn-secondary" id="sedo-btn" href="#" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+        </svg>
+        Make an offer via Sedo
+      </a>
+    </div>
+  </div>
+
+  <p class="footer">Domain registration active &mdash; serious inquiries only</p>
+
+  <script>
+    (function () {
+      var CONTACT_EMAIL = 'domeinnlpd@outlook.com';
+
+      var hostname = window.location.hostname;
+
+      // Strip leading "www." if present
+      var domain = hostname.replace(/^www\./, '');
+
+      // Fallback for local testing
+      if (!domain || domain === 'localhost' || domain === '127.0.0.1') {
+        domain = 'yourdomain.nl';
+      }
+
+      // Update page title
+      document.getElementById('page-title').textContent = domain + ' — For Sale';
+
+      // Display domain
+      document.getElementById('domain-display').textContent = domain;
+
+      // Build email mailto
+      var subject = encodeURIComponent('Interest in acquiring ' + domain);
+      var body = encodeURIComponent(
+        'Hello,\n\n' +
+        'I am interested in acquiring the domain ' + domain + '.\n\n' +
+        'Please provide more information on availability and pricing.\n\n' +
+        'Kind regards,'
+      );
+      document.getElementById('email-btn').href =
+        'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + body;
+
+      // Build Sedo link (search for exact domain)
+      document.getElementById('sedo-btn').href =
+        'https://sedo.com/search/details/?domain=' + encodeURIComponent(domain);
+    })();
+  </script>
+
+</body>
+</html>
