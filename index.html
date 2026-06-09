@@ -242,16 +242,10 @@
       // Display domain
       document.getElementById('domain-display').textContent = domain;
 
-      // Build email mailto
+      // Build email mailto (alleen ontvanger + onderwerp, geen concepttekst)
       var subject = encodeURIComponent('Interest in acquiring ' + domain);
-      var body = encodeURIComponent(
-        'Hello,\n\n' +
-        'I am interested in acquiring the domain ' + domain + '.\n\n' +
-        'Please provide more information on availability and pricing.\n\n' +
-        'Kind regards,'
-      );
       document.getElementById('email-btn').href =
-        'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + body;
+        'mailto:' + CONTACT_EMAIL + '?subject=' + subject;
 
       // Build Sedo link (search for exact domain)
       document.getElementById('sedo-btn').href =
